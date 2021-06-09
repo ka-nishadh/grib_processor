@@ -105,7 +105,7 @@ def grib_download_process(params,bucket):
     datefmt=params.startdate
     run=params.run
     var_name=params.short_name
-    folderpath='/home/gfs_weather_data/gfs_data/'
+    folderpath='/tmp/gfs_data/'
     date_folder=folderpath+datefmt+run+'/'
     foldercreator(date_folder)
     variable_json=variable_json_creator()
