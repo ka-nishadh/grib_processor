@@ -118,6 +118,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -129,6 +131,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -140,6 +144,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -151,6 +157,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -162,6 +170,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -174,6 +184,8 @@ def grib_download_process(params,bucket):
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
             gfs_grib_loc = Path(gfs_grib)
+            print(gribfilename)
+            print(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
         elif filtr_json['shrt_name']=='cape':
@@ -183,6 +195,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
@@ -193,6 +207,8 @@ def grib_download_process(params,bucket):
             params.searchString=filtr_json['filter_string']
             gribfilename=s3_gfs_download(params)
             gfs_grib=f'{params.localfolder}{gribfilename}'
+            print(gribfilename)
+            print(gfs_grib)
             gfs_grib_loc = Path(gfs_grib)
             if gfs_grib_loc.exists():
                 gcs_uploader(params,gfs_grib,bucket)
