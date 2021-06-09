@@ -9,7 +9,7 @@ setup(
     author='Nishadh KA',
     author_email='nishadh@numer8.in',
     keywords=['gribprocess'],
-    url='https://github.com/ka-nishadh/grib_process'
+    url='https://github.com/ka-nishadh/grib_processor'
 )
 
 

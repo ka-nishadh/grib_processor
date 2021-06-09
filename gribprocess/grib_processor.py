@@ -1,7 +1,9 @@
+import sys
+sys.path.append('..')
 
 import os
 import ntpath
-from utils_s3_grib_download import s3_gfs_download
+from gribprocess.utils_s3_grib_download import s3_gfs_download
 
 from datetime import datetime, timedelta
 
