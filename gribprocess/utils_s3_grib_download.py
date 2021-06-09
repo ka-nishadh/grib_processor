@@ -28,9 +28,6 @@ def path_leaf(path):
     
 
 
-s3_client = boto3.client('s3')
-
-
 def foldercreator(path):
    """
     creates a folder
@@ -64,7 +61,9 @@ def s3botodownloadfile(s3keylocation, bucket,localfolder):
     """
     filename=path_leaf(s3keylocation)
     #filename=configz.date+'_pfz_gen_logs.txt' 
-    s3_client.download_file(bucket,s3keylocation, '%s/%s' % (localfolder,filename))
+    #s3_client.download_file(bucket,s3keylocation, '%s/%s' % (localfolder,filename))
+    local_inputfile='%s/%s' % (localfolder,filename)
+    boto3.resource('s3').meta.client.download_file(bucket, s3keylocation, local_inputfile)
     download_filepath=localfolder+filename
     return download_filepath, filename
 
